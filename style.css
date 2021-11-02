@@ -1,51 +1,124 @@
-/* ::: HOLDER, CARD, FACES */
-.holder {
-  display:     inline-block;
-  width:       64px;
-  height:      64px;
-  perspective: 700px;
+@import url('https://fonts.googleapis.com/css?family=Cantata+One');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
-.card, .front, .back{
-  position:   absolute;
-  height:     inherit;
-  width:      inherit;
-  transition: all .7s;
-  transform-style:     preserve-3d;
-  backface-visibility: visible;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/* ::: FACES */
-.front{background: tomato;}
-.back{background:  slategray;}
+body {
+  background-color: #bdc2e8;
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  background-repeat: no-repeat;
+}
 
-/* ::: SETUP FACES */
-.flipH .back{transform: rotateY(-180deg);}
-.flipV .back{transform: rotateX(180deg);}
+/* CARD STYLING */
 
-/* ::: HOVER EFFECTS (Remove Automated for this to work) */
-.flipH:hover .card{ transform: rotateY(180deg); }
-.flipV:hover .card{ transform: rotateX(-180deg); }
+.container,
+.card,
+.card_front,
+.card_back {
+  width: 397px;
+  height: 640px;
+  margin: 3em auto;  
+}
 
-/* ::: AUTOMATED EFFECTS */
-.flipH .card{
-  animation: flipH 2s 0s infinite alternate ease-in-out;
+.card_front,
+.card_back {  
+/*   height: 100%; */
+  background: url('http://i280.photobucket.com/albums/kk195/thelittleblacksmith/lobster-nebula_zps2j1cvbkx.jpg') no-repeat;
+  box-shadow: 0px 5px 25px 0px rgba(51,51,51,0.28); 
 }
-.flipV .card{
-  animation: flipV 2s 0s infinite alternate ease-in-out;
+
+.card-symbol {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: 'Cantata One', serif;
+  font-size: 13em;  
+  mix-blend-mode: lighten;
 }
-@keyframes flipH {
-  0% { transform: rotateY(0deg); }
-  100% { transform: rotateY(-180deg); }
+
+@supports(display:flex){
+ .card_front {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  .card_front .card-symbol {  
+    margin: 0 0.15em;
+    border-radius: 50%;
+    font-size: 15em;  
+  }
 }
-@-webkit-keyframes flipH {
-  0% { transform: rotateY(0deg); }
-  100% { transform: rotateY(-180deg); }
+
+.card_front {
+  position: relative;
+  padding: 0 1em;
 }
-@keyframes flipV {
-  0% { transform: rotateX(0deg); }
-  100% { transform: rotateX(-180deg); }
+
+.card_front .card-symbol {    
+  font-size: 15em;  
 }
-@-webkit-keyframes flipV {
-  0% { transform: rotateX(0deg); }
-  100% { transform: rotateX(-180deg); }
+
+
+
+.card_back {
+/*   display: none; */
+  padding: 1em;
+}
+
+.card_front > *,
+.card_back > * {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);  
+}
+
+.card-text {
+  padding: 0 4.5em 1em;
+  line-height: 1.4;
+}
+
+p:first-of-type {    
+  margin-top: 0;
+  padding: 1.5em 0 0;
+  border-top: 8px solid #333;
+}
+
+/* FLIP CARD STYLING */
+.container {
+  perspective: 1000px;
+}
+
+.container:hover .card, 
+.container.hover {
+  transform: rotateY(-180deg);
+}
+
+.card {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card_front,
+.card_back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card_front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.card_back {
+  transform: rotateY(-180deg);
 }
