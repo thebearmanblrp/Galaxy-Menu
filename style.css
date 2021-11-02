@@ -1,17 +1,10 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-background-image: none !important;
-    background-repeat: no-repeat !important;
-background-color: transparent !important;
-border: none !important;
-    height: 800px !important;
-    width: 700px !important;
-    position: fixed !important;
-    top: 50% !important;
-    left: 85% !important;
-    margin-top: -400px !important;
-    margin-left: -600px !important;
-    overflow-y: scroll;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 ::-webkit-scrollbar {
 display: none;
