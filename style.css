@@ -1,18 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-body {
-    background: #F17563;
-    font-family: Open Sans;
-    font-size: 50px;
-  	color: #222;
-}
-
 label {
     -webkit-perspective: 1000px;
     perspective: 1000px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    display: block;
     width: 300px;
     height: 200px;
     position: absolute;
@@ -20,7 +10,6 @@ label {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    cursor: pointer;
 }
 
 .card {
@@ -38,7 +27,6 @@ label {
         position: absolute;
         height: 100%;
         width: 100%;
-        background: #FFF;
         text-align: center;
         line-height: 200px;
         -webkit-backface-visibility: hidden;
@@ -47,8 +35,6 @@ label {
     }
 
     .card .back {
-        background: #222;
-        color: #FFF;
         -webkit-transform: rotateX(180deg);
         transform: rotateX(180deg);
     }
