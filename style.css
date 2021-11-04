@@ -1,15 +1,12 @@
 .flipping-card-item-wrapper{
     perspective: 150rem;
     position: relative;
-    width:   400px;
-    height:  400px;
-    margin: 1rem;
+    width:   1000px;
+    height:  1000px;
 }
 
 .flipping-card-item-side{
     position: absolute;
-    top: 0;
-    left: 0;
     backface-visibility: hidden;
     margin:  1.5rem;
     width: 100%;
