@@ -1,13 +1,8 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background: none;
 }
 .container {
   width: 1000px;
-  display: flex;
   justify-content: space-between;
   -webkit-perspective: 800px;
           perspective: 800px;
