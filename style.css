@@ -33,14 +33,12 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-image: url('https://i.imgur.com/09hDm4V.png') !important;
   background-color: none !important;
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-image: url('https://i.imgur.com/gmhzajV.png') !important;
   background-color: none !important;
   color: white;
   transform: rotateY(180deg);
