@@ -9,12 +9,12 @@
 
 /* This container is needed to position the front and back side */ 
 .flip-card-inner {
-  position: relative !important;
-  width: 100% !important;
-  height: 100% !important;
-  text-align: center !important;
-  transition: transform 0.8s !important;
-  transform-style: preserve-3d !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
