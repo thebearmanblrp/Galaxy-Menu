@@ -38,7 +38,6 @@ body {
 .container .card .item img {
   width: 400px;
   height: 400px;
-  -o-object-fit: cover;
 }
 .container .card .back-side {
   -webkit-transform: rotateY(0.5turn);
