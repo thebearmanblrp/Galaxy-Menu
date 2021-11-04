@@ -9,8 +9,6 @@ body {
 }
 .container .card {
   position: relative;
-  width: 400px;
-  height: 400px;
   cursor: pointer;
   transition: 1s ease-in-out;
   -webkit-transform-style: preserve-3d;
