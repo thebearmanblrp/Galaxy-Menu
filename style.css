@@ -1,11 +1,6 @@
 body {
   background: none;
 }
-.container {
-  width: 1000px;
-  -webkit-perspective: 800px;
-          perspective: 800px;
-}
 .container .card {
   cursor: pointer;
   transition: 1s ease-in-out;
