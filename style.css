@@ -42,11 +42,14 @@ body {
   font-size: 60px;
   border-radius: 5px;
   backface-visibility: hidden;
-  visibility: hidden;
 }
 
 .back {
   background: #03446A;
   color: white;
   transform: rotateY( 180deg );
+}
+.card.flip .card--front {
+    transition-delay: 0.3s;
+    visibility: hidden;
 }
