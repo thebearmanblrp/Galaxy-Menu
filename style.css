@@ -3,15 +3,11 @@ label {
     perspective: 1000px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    width: 400px;
-    height: 400px;
     position: absolute;
 }
 
 .card {
     position: relative;
-    height: 100%;
-    width: 100%;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transition: all 600ms;
@@ -24,7 +20,7 @@ label {
         height: 100%;
         width: 100%;
         text-align: center;
-        line-height: 200px;
+        line-height: 400px;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 2px;
