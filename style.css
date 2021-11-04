@@ -1,51 +1,64 @@
-/* Code By Webdevtrick ( https://webdevtrick.com ) */
-body {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  height: 100vh !important;
-  background: black !important;
+/* main container */
+.panel {
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+  position: relative;  
+  -webkit-perspective: 1000;
 }
 
-.container {
-  width: 1000px !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  -webkit-perspective: 800px !important;
-          perspective: 800px !important;
+/* prevent animation on hover */
+.panel:not(:hover) .cards {
+  -webkit-animation: CardFlip 5s infinite;
+  -webkit-transform-style: preserve-3d;
 }
-.container .card {
-  position: relative !important;
-  width: 240px !important;
-  height: 300px !important;
-  color: white !important;
-  cursor: pointer !important;
-  transition: 1s ease-in-out !important;
-  -webkit-transform-style: preserve-3d !important;
-          transform-style: preserve-3d !important;
+
+/* increase front card size on hover */
+.panel:hover .front {
+    -webkit-transform: scale(1.2, 1.2);
 }
-.container .card:hover {
-  -webkit-transform: rotateY(0.5turn) !important;
-          transform: rotateY(0.5turn) !important;
+
+/* styling divs to be 100% fit */
+.panel .cards,
+.panel .front,
+.panel .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
-.container .card .item {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  -webkit-backface-visibility: hidden !important;
-          backface-visibility: hidden !important;
-  transition: 1s ease-in-out;
-  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  
+/* cards container */
+.panel .cards {
+  -webkit-transition: all 1s linear;
 }
-.container .card .item img {
-  width: 240px !important;
-  height: 300px !important;
-  -o-object-fit: cover !important;
-     object-fit: cover !important;
+  
+/* front card */
+.panel .cards .front {
+  z-index: 2;
+  background: none;
+  -webkit-backface-visibility: hidden;
 }
-.container .card .back-side {
-  -webkit-transform: rotateY(0.5turn) !important;
-          transform: rotateY(0.5turn) !important;
+
+/* back card */
+.panel .cards .back {
+  z-index: 1;
+  background: none;
+  -webkit-transform: scale(-1, 1);
+}
+
+
+@-webkit-keyframes CardFlip {
+  0% {  
+    -webkit-transform: rotateY(0deg);
+  }
+  
+  50% {
+    -webkit-transform: rotateY(180deg);
+  }
+  
+  100% {  
+    -webkit-transform: rotateY(360deg);
+  }
 }
