@@ -1,64 +1,75 @@
-/* main container */
-.panel {
-  width: 300px;
-  height: 300px;
-  margin: 100px auto;
-  position: relative;  
-  -webkit-perspective: 1000;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    background: #F17563;
+    font-family: Open Sans;
+    font-size: 50px;
+  	color: #222;
 }
 
-/* prevent animation on hover */
-.panel:not(:hover) .cards {
-  -webkit-animation: CardFlip 5s infinite;
-  -webkit-transform-style: preserve-3d;
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
-/* increase front card size on hover */
-.panel:hover .front {
-    -webkit-transform: scale(1.2, 1.2);
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
 }
 
-/* styling divs to be 100% fit */
-.panel .cards,
-.panel .front,
-.panel .back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-  
-/* cards container */
-.panel .cards {
-  -webkit-transition: all 1s linear;
-}
-  
-/* front card */
-.panel .cards .front {
-  z-index: 2;
-  background: none;
-  -webkit-backface-visibility: hidden;
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #FFF;
+        text-align: center;
+        line-height: 200px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+    .card .back {
+        background: #222;
+        color: #FFF;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
 }
 
-/* back card */
-.panel .cards .back {
-  z-index: 1;
-  background: none;
-  -webkit-transform: scale(-1, 1);
+input {
+    display: none;
 }
 
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
 
-@-webkit-keyframes CardFlip {
-  0% {  
-    -webkit-transform: rotateY(0deg);
-  }
-  
-  50% {
-    -webkit-transform: rotateY(180deg);
-  }
-  
-  100% {  
-    -webkit-transform: rotateY(360deg);
-  }
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
 }
