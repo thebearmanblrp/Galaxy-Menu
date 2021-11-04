@@ -1,6 +1,4 @@
 label {
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: absolute;
@@ -17,13 +15,9 @@ label {
 
     .card div {
         position: absolute;
-        height: 100%;
-        width: 100%;
         text-align: center;
-        line-height: 400px;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        border-radius: 2px;
     }
 
     .card .back {
