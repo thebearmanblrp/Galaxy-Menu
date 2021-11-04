@@ -34,7 +34,6 @@
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-image: url('https://i.imgur.com/09hDm4V.png') !important;
-  
   background-color: none !important;
   color: black;
 }
