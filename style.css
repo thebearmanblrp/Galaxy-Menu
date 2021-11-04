@@ -3,7 +3,7 @@ body {
   justify-content: center !important;
   align-items: center !important;
   height: 100vh !important;
-  background: none !important;
+  background: transparent !important;
 }
 
 .container {
@@ -17,7 +17,6 @@ body {
   position: relative !important;
   width: 400px !important;
   height: 400px !important;
-  color: white;
   cursor: pointer !important;
   transition: 1s ease-in-out !important;
   -webkit-transform-style: preserve-3d !important;
@@ -36,7 +35,6 @@ body {
   -webkit-backface-visibility: hidden !important;
           backface-visibility: hidden !important;
   transition: 1s ease-in-out !important;
-  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4)) !important;
 }
 .container .card .item img {
   width: 400px !important;
