@@ -1,7 +1,5 @@
 .container {
   width: 1000px !important;
-  display: flex !important;
-  justify-content: space-between !important;
   -webkit-perspective: 800px !important;
           perspective: 800px !important;
 }
