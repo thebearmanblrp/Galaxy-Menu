@@ -16,9 +16,8 @@ body {
 }
 .container .card {
   position: relative;
-  width: 240px;
-  height: 300px;
-  color: white;
+  width: 400px;
+  height: 400px;
   cursor: pointer;
   transition: 1s ease-in-out;
   -webkit-transform-style: preserve-3d;
@@ -40,8 +39,8 @@ body {
   -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 }
 .container .card .item img {
-  width: 240px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
