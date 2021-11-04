@@ -1,9 +1,10 @@
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: transparent !important;
+  background: black;
 }
 
 .container {
@@ -15,8 +16,10 @@ body {
 }
 .container .card {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 240px;
+  height: 300px;
+  color: white;
+  cursor: pointer;
   transition: 1s ease-in-out;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -37,8 +40,10 @@ body {
   -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 }
 .container .card .item img {
-  width: 400px;
-  height: 400px;
+  width: 240px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container .card .back-side {
   -webkit-transform: rotateY(0.5turn);
