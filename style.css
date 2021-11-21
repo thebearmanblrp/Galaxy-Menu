@@ -1,8 +1,8 @@
 /* ::: HOLDER, CARD, FACES */
 .holder {
   display:     inline-block;
-  width:       64px;
-  height:      64px;
+  width:       800px;
+  height:     800px;
   perspective: 700px;
 }
 .card, .front, .back{
