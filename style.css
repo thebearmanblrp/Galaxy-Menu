@@ -24,6 +24,8 @@
 
 .front {
     z-index: 2;
+    border: none !important;
+    outline: none !important;
 }
 
 .back {
@@ -32,6 +34,8 @@
     -ms-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);  
     transform: rotateY(-180deg);  
+    border: none !important;
+    outline: none !important;
 }
 
 .panel:hover .front {
