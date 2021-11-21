@@ -21,19 +21,20 @@
     top: 0px;
     left: 0px;
 }
+
 .front {
     z-index: 2;
-    background-color: none !important;
-    background-image: url(https://i.imgur.com/09hDm4V.png) !important;
+    background-image: none, url(https://i.imgur.com/09hDm4V.png) !important;
     background-size: 800px 800px;
 }
+
 .back {
     z-index: 1;
     -webkit-transform: rotateY(-180deg);
     -ms-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);  
     transform: rotateY(-180deg);  
-    background-color: none !important;
+    background-image: none, url(https://i.imgur.com/gmhzajV.png) !important;
     background-size: 800px 800px;
 }
 
