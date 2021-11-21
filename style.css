@@ -24,7 +24,7 @@
 
 .front {
     z-index: 2;
-    background-image: none, url(https://i.imgur.com/09hDm4V.png) !important;
+    background-image: url(https://i.imgur.com/09hDm4V.png) !important;
     background-size: 800px 800px;
 }
 
@@ -34,7 +34,7 @@
     -ms-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);  
     transform: rotateY(-180deg);  
-    background-image: none, url(https://i.imgur.com/gmhzajV.png) !important;
+    background-image: url(https://i.imgur.com/gmhzajV.png) !important;
     background-size: 800px 800px;
 }
 
