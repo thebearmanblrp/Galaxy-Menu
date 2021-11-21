@@ -52,7 +52,3 @@
     -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
-
-fieldset {
-	border: none;
-}
