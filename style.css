@@ -6,8 +6,8 @@
 }
 
 .card {
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     -o-transition: all .5s;
     -ms-transition: all .5s;
     -moz-transition: all .5s;
