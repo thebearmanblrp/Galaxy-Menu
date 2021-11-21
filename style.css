@@ -1,7 +1,7 @@
 .panel {
     width: 300px;
     height: 300px;
-    margin: none !important;
+    margin: auto;
     position: relative;
 }
 
