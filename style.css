@@ -37,9 +37,6 @@
     border: none !important;
     outline: none !important;
 }
-fieldset {
-    border: 0px;
-}
 
 .panel:hover .front {
     z-index: 1;
@@ -55,4 +52,8 @@ fieldset {
     -ms-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);
+}
+
+fieldset {
+	border: none;
 }
