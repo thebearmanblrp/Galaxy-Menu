@@ -3,6 +3,9 @@
     height: 300px;
     margin: auto;
     position: relative;
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .card {
@@ -27,6 +30,9 @@
 
 .front {
     z-index: 2;
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .back {
@@ -35,6 +41,9 @@
     -ms-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);  
     transform: rotateY(-180deg);  
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .panel:hover .front {
@@ -43,6 +52,9 @@
     -ms-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .panel:hover .back {
@@ -51,6 +63,9 @@
     -ms-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .field_set{
