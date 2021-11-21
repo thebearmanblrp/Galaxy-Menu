@@ -27,8 +27,6 @@
 
 .front {
     z-index: 2;
-    border: none !important;
-    outline: none !important;
 }
 
 .back {
