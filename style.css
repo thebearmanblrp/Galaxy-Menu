@@ -1,12 +1,12 @@
 .panel {
-    width: 631px;
-    height: 1323px;
+    width: 315px;
+    height: 661px;
     position: relative;
 }
 
 .card {
-    width: 631px;
-    height: 1323px;
+    width: 315px;
+    height: 661px;
     -o-transition: all .5s;
     -ms-transition: all .5s;
     -moz-transition: all .5s;
