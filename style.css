@@ -37,6 +37,9 @@
     border: none !important;
     outline: none !important;
 }
+fieldset {
+    border: 0px;
+}
 
 .panel:hover .front {
     z-index: 1;
