@@ -27,7 +27,7 @@
     img {
     width: 200px;
     height: 300px;
-    object-fit: none;
+    object-fit: contain;
 }
 
 .back {
@@ -39,7 +39,7 @@
     img {
     width: 200px;
     height: 300px;
-    object-fit: none;
+    object-fit: contain;
 }
 
 .panel:hover .front {
