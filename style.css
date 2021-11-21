@@ -1,7 +1,7 @@
 .panel {
     width: 800px;
     height: 800px;
-    margin: none !important;
+    margin: auto;
     position: relative;
 }
 
@@ -24,6 +24,12 @@
 
 .front {
     z-index: 2;
+    background-image: none,
+    url(https://i.imgur.com/09hDm4V.png);
+    background-position:
+    bottom,
+    top;
+    background-size: 800px 800px;
 }
 
 .back {
@@ -32,6 +38,12 @@
     -ms-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);  
     transform: rotateY(-180deg);  
+    background-image: none,
+        url(https://i.imgur.com/gmhzajV.png);
+    background-position:
+    bottom,
+    top;
+    background-size: 800px 800px;
 }
 
 .panel:hover .front {
