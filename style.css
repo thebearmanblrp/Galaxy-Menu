@@ -1,6 +1,6 @@
 .panel {
-    width: 800px;
-    height: 800px;
+    width: 300px;
+    height: 300px;
     margin: none !important;
     position: relative;
 }
@@ -37,8 +37,6 @@
     -ms-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);  
     transform: rotateY(-180deg);  
-    border: none !important;
-    outline: none !important;
 }
 
 .panel:hover .front {
@@ -46,12 +44,7 @@
     -webkit-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
--webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
     transform: rotateY(180deg);
-    border: none !important;
-    outline: none !important;
 }
 
 .panel:hover .back {
@@ -59,12 +52,7 @@
     -webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
-	-webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
     transform: rotateY(0deg);
-    border: none !important;
-    outline: none !important;
 }
 
 fieldset {
