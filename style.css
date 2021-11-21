@@ -1,7 +1,7 @@
 .panel {
-    width: 600px;
-    height: 600px;
-    margin: none;
+    width: 300px;
+    height: 300px;
+    margin: auto;
     position: relative;
 }
 
@@ -51,4 +51,8 @@
     -ms-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);
+}
+
+.field_set{
+ border: none !important;
 }
