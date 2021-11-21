@@ -1,7 +1,7 @@
 .panel {
-    width: 300px;
-    height: 300px;
-    margin: auto;
+    width: 500px;
+    height: 500px;
+    margin: none !important;
     position: relative;
 }
 
@@ -16,6 +16,9 @@
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
     backface-visibility: hidden;
     position: absolute;
     top: 0px;
