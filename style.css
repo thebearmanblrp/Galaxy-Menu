@@ -25,10 +25,10 @@
 .front {
     z-index: 2;
     background-image: none,
-    url(https://i.imgur.com/09hDm4V.png);
+    url(https://i.imgur.com/09hDm4V.png) !important;
     background-position:
     bottom,
-    top;
+    top !important;
     background-size: 800px 800px;
 }
 
@@ -39,10 +39,10 @@
     -moz-transform: rotateY(-180deg);  
     transform: rotateY(-180deg);  
     background-image: none,
-        url(https://i.imgur.com/gmhzajV.png);
+        url(https://i.imgur.com/gmhzajV.png) !important;
     background-position:
     bottom,
-    top;
+    top !important;
     background-size: 800px 800px;
 }
 
